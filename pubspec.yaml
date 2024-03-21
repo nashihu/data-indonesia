@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  indonesia_json:
+    git:
+      url: https://github.com/nashihu/indonesia_json.git
 
 dev_dependencies:
   flutter_test:
@@ -16,8 +19,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/
-    - assets/kabupaten/
-    - assets/kecamatan/
-    - assets/kelurahan/
+  # assets:
+    # - packages/indonesia_json/assets/
+    # - packages/indonesia_json/assets/kabupaten/
+    # - packages/indonesia_json/assets/kecamatan/
+    # - packages/indonesia_json/assets/kelurahan/

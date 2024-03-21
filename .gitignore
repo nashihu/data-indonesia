@@ -1,2 +1,4 @@
 generate.php
 export/
+.dart_tool
+build/

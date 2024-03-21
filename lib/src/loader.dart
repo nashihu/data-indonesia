@@ -6,7 +6,8 @@ import 'package:indonesia_address/src/address_model.dart';
 class IndonesiaAddress {
   static Future<List<AddressModel>> _getListAddress(
       {required String jsonPath, String searchValue = ''}) async {
-    final raw = await rootBundle.loadString(jsonPath);
+    final raw =
+        await rootBundle.loadString('packages/indonesia_json/$jsonPath');
     final jsn = jsonDecode(raw);
     final data = (jsn as List).map((e) => AddressModel.fromJson(e)).toList();
     if (searchValue.isEmpty) return data;
